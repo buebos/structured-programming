@@ -30,7 +30,7 @@ int main() {
 
     if (professorCategory == 1) {
         professorSalary = professorSalary * 1.15;
-    } else if (professorSalary == 2) {
+    } else if (professorCategory == 2) {
         professorSalary = professorSalary * 1.2;
     } else {
         printf(
