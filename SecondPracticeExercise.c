@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
-{
+int main() {
     char operation[20];
     float value1;
     float value2;
@@ -16,8 +15,7 @@ int main()
     isSum = strcmp(operation, "ADD") == 0;
     isMultiply = strcmp(operation, "MULTIPLY") == 0;
 
-    if (isSum != 1 && isMultiply != 1)
-    {
+    if (isSum != 1 && isMultiply != 1) {
         printf("ERROR: Unknown operation");
         return 1;
     }
@@ -27,12 +25,9 @@ int main()
     printf("Type value 2: ");
     scanf("%f", &value2);
 
-    if (isSum == 1)
-    {
+    if (isSum == 1) {
         printf("The result of ADD is: %f", value1 + value2);
-    }
-    else
-    {
+    } else {
         printf("The result of MULTIPLY is: %f", value1 * value2);
     }
 

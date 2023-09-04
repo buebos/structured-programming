@@ -12,8 +12,7 @@ int main()
     /**
      * Second exercise; display greeting and username
      */
-    int MAX_LENGTH = 100;
-    char name[MAX_LENGTH];
+    char name[100];
     /**
      * Third exercise; ecuation resolution
      */

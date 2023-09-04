@@ -1,8 +1,7 @@
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
-int main()
-{
+int main() {
     float a;
     float b;
     float c;
@@ -19,24 +18,19 @@ int main()
 
     insideSqrt = pow(b, 2) - 4 * a * c;
 
-    if (insideSqrt > 0)
-    {
+    if (insideSqrt > 0) {
         float x1 = (-b + sqrt(insideSqrt)) / (2 * a);
         float x2 = (-b - sqrt(insideSqrt)) / (2 * a);
 
         printf("x1 is: %f", x1);
         printf("\nx2 is: %f", x2);
-    }
-    else if (insideSqrt < 0)
-    {
+    } else if (insideSqrt < 0) {
         float left = -b / (2 * a);
         float right = sqrt(-insideSqrt) / (2 * a);
 
         printf("The equation requires complex numbers, the first result is the following: %f + i * %f", left, right);
         printf("\nThe equation requires complex numbers, the first result is the following: %f - i * %f", left, right);
-    }
-    else
-    {
+    } else {
         float x = -b / (2 * a);
 
         printf("The equation has only one result: %f", x);
