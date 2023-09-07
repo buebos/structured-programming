@@ -1,5 +1,5 @@
 struct Node {
-    int value;
+    int data;
     struct Node *next;
 };
 
@@ -8,4 +8,10 @@ struct LinkedList {
     struct Node *head;
     struct Node *tail;
 };
+
+int LinkedList(){
+    struct LinkedList linkedList;
+
+    return 0;
+}
 
