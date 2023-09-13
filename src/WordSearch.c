@@ -98,7 +98,25 @@ int main(int argc, char *argv[]) {
     }
 
     if (foundWordsLen == 0) {
-        printf("[INFO]: No matches found in text, be sure to use quotes for the text to make the search on\n[EXAMPLE]: WordSearch \"Search text here\" this are words that will be searched individually");
+        printf("[INFO]: No matches found in text, be sure to use quotes for the text to make the search on\n");
+        printf("[INFO]: WordSearch \"Search text here\" this are words that will be searched individually\n");
+        printf("[INFO]: Text words given: [");
+
+        for (int i = 0; i < wordsLen; i++) {
+            printf("%s", textWords[i]);
+            if (i < wordsLen - 1) {
+                printf(", ");
+            }
+        }
+        printf("]\n");
+        printf("[INFO]: Search words given: [");
+        for (int i = 0; i < searchWordsLen; i++) {
+            printf("%s", searchWords[i]);
+            if (i < searchWordsLen - 1) {
+                printf(", ");
+            }
+        }
+        printf("]\n");
     } else {
         for (int i = 0; i < foundWordsLen; i++) {
             printf("[INFO]: Found %d: %s\n", i + 1, foundWords[i]);
