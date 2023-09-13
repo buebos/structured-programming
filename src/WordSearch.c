@@ -12,7 +12,7 @@ int cstrlen(const char *arr) {
 
     return i;
 }
-int csetstrsplit(const char *str, const char *separators, char splitted[100][100]) {
+int csetstrsplit(const char *str, const char *separators, char splitted[1000][1000]) {
     int i = 0, j = 0, k = 0;
     int separatorsLen = cstrlen(separators);
 
@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
     const char WORD_SEPARATORS[] = " \n\t.,;:";
     char searchWords[100][100];
     char foundWords[100][100];
-    char textWords[100][100];
+    char textWords[1000][1000];
     int wordsLen = csetstrsplit(TEXT, WORD_SEPARATORS, textWords);
     int searchWordsLen = 0;
     int foundWordsLen = 0;
