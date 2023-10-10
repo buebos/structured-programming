@@ -2,7 +2,9 @@
   "files.associations": {
     "stdio.h": "c",
     "dirent.h": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "random": "c",
+    "floatmatrix.h": "c"
   },
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}"
 }
