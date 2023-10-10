@@ -1,2 +1,1 @@
-Structured programming repository
-Mostly coded in C
+Structured programming class repository mostly coded in C
