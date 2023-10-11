@@ -7,7 +7,7 @@
       "args": [
         "-fdiagnostics-color=always",
         "-g",
-        "${fileDirname}\\**.c",
+        "${file}",
         "-o",
         "${workspaceFolder}\\dist\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe"
       ],
