@@ -15,6 +15,11 @@ float **FloatMatrix(int rows, int columns) {
      * row1 (contains floats of row one until columns - 1) =+columns=> row2 =+columns=> ... =+columns=> rowN
      */
     float **matrix = (float **)malloc(sizeof(float *) * rows + sizeof(float) * columns * rows);
+
+    if (matrix == NULL) {
+        printf("[ERROR]: Could not allocate matrix on FloatMatrix function, this will probablly throw a segmentation fault!");
+    }
+
     /** Skip the first virtual row as it will be the pointers location */
     float *firstElementPtr = (float *)(matrix + rows);
 
