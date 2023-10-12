@@ -5,7 +5,8 @@
     "stdlib.h": "c",
     "random": "c",
     "numbers": "c",
-    "floatmatrix.h": "c"
+    "floatmatrix.h": "c",
+    "funciones.h": "c"
   },
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}"
 }
