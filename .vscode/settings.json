@@ -6,7 +6,18 @@
     "random": "c",
     "numbers": "c",
     "floatmatrix.h": "c",
-    "funciones.h": "c"
+    "funciones.h": "c",
+    "stat.h": "c",
+    "array": "c",
+    "istream": "c",
+    "memory": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "utility": "c",
+    "xlocnum": "c",
+    "xutility": "c",
+    "*.tcc": "c",
+    "functional": "c"
   },
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}"
 }
